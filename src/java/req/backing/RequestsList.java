@@ -5,6 +5,7 @@
  */
 package req.backing;
 
+import java.util.List;
 import javax.ejb.EJB;
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
@@ -26,8 +27,8 @@ public class RequestsList {
     public RequestsList() {
     }
     
-      public List<Request> getAllRequests() {
-          ...    
+      public List<req.entities.Request> getAllRequests() {
+          return requestFacade.findAll();
       }
     
 }
