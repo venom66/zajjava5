@@ -9,6 +9,7 @@ import java.util.List;
 import javax.ejb.EJB;
 import javax.inject.Named;
 import javax.enterprise.context.RequestScoped;
+import javax.inject.Inject;
 import req.facade.RequestFacadeLocal;
 
 /**
@@ -20,6 +21,7 @@ import req.facade.RequestFacadeLocal;
 public class RequestsList {
 
     @EJB(name = "requestFacade")
+   
     private RequestFacadeLocal requestFacade;
 
     
